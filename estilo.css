@@ -1,0 +1,183 @@
+@charset   "utp-8";
+/* CSS Document */
+
+* { border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'renaultteemedregular';
+    src: url('font/renaultteemed_regular-webfont.woff2') format('woff2'),
+         url('font/renaultteemed_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+/* Aqui comienza Body / main / header   */
+}
+body { 
+        font-family: "Scope One", serif;
+        font-size: 18px;   
+        line-height: 1.75rem;
+        background-color: #999;
+}
+main{ 
+    max-width: 1366px;  
+    background-color: white;
+    margin: 0 auto;
+}
+img, video, iframe { 
+    width: 100%;
+} 
+
+li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #999;
+}
+a:hover{
+    color: #000;
+}
+h1, header nav, h2, h3, h4, footer {
+    font-family:'renaultteemedregular', serif;
+}
+#logo{  /* Logo */
+    float: left;
+    width: 60px;
+    margin: 20px 1.5% 22px 7.5%;
+}
+h1{  /* RENAULT: campeonato'82  */
+    float: left;
+    font-size: 3.25rem;
+    margin-top: 50px;
+    font-weight: bold;
+    
+}
+/* Aqui comienzan nav / ul / li */
+nav#menuprincipal { /* Barra del menu con fondo negro y coordenadas */
+    clear: both;   
+    background-color: black;
+    padding: 8px 8%;  /* margen interior */
+}
+nav#menuprincipal li { 
+    display: inline-block;
+    padding-right: 2.5%;  /* Separacion entre ellos */
+}
+nav#menuprincipal  a{ /* Letras de menu en reposo: blanco */
+        color: white;
+}
+nav#menuprincipal  a:hover{  /* Letras de menu cuando la tocas: amarillo */
+    color: #f2dd46;
+}
+/* Aqui comienza section / article */
+section{ 
+    float: left;
+    width: 75%;
+    padding: 50px 3.5% 50px 8%;
+   margin-bottom: 20px;
+}
+/* ASIDE */
+aside{ /* Contenido al costado de la pagina (gifs) */
+    float: left;
+    width: 25%;
+    padding: 100px 8% 50px 0%;
+    margin-top: 65px;
+}
+aside nav { 
+    margin-bottom: 20px;
+}
+.aside-gif { /* Borde de Gifs */
+    border: 0.5pt solid #999;
+}
+
+#borde-amarillo {
+    border-bottom: 20px solid #f2dd46 ;
+}
+.resaltado {
+    color:  #f2dd46 ;
+}
+
+#numero-rojo {
+    color: #ed2939;
+    margin-right: 13px;
+}
+#numero-azul {
+    color: #002395;
+    margin-right: 13px;
+}
+#nombre-piloto {
+    display: inline-block;
+}
+.bandera{
+    width: 42px;
+    margin-left: 13px;
+}
+.contenedoriframe {  /* Video de Index */
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+}
+.contenedoriframe iframe { /* Video de Index */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+figcaption{ /* Pie de foto y video */
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+h2{ /* Nombre del piloto y El más rápido, el más frágil */
+    font-size: 2.5rem;
+    padding-bottom: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+h3{ /* Un comienzo inmejorable / Una victoria que le costó su lugar en el equipo */
+    font-size: 1.5rem;
+    color: #666;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+h4 { /* Contenido vinculado / Nos ayudan a pagar el Hosting:  */
+    font-size: 1.25rem;
+    color: #666;
+    border-bottom: 1px #ccc solid;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+/* Boton "arriba" dentro de section y article en Prost y Arnoux */
+.boton-arriba-azul {
+    background-color: #002395;
+    color: #fff;
+    padding: 3px 10px 2px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.boton-arriba-rojo {
+    background-color: #ed2939;
+    color: #fff;
+    padding: 3px 10px 2px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+a.boton-arriba-rojo:hover, a.boton-arriba-azul:hover {
+    color: #f2dd46;
+}
+
+/* Footer */
+footer {
+    clear: both;
+    color: #fff;
+    background-color: black;
+    padding: 15px 8%;
+}
+footer a:hover {
+    color: #f2dd46;
+}
